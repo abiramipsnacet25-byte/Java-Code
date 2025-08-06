@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan = new Scanner(System.in);
+        char ch = scan.next().charAt(0);
+        boolean uppercase = (ch>='A' && ch<='Z');
+        boolean lowercase = (ch>='a' && ch<='z');
+        boolean digit = (ch>='0' && ch<='9');
+        boolean specialcharacter =! (uppercase || lowercase || digit);
+        if(uppercase)
+            System.out.println("Uppercase Alphabet");
+        else if(lowercase)
+            System.out.println("Lowercase Alaphabet");
+        else if(digit)
+            System.out.println("Digit");
+        else
+            System.out.println("Special character");
+            
+    }
+}
