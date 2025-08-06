@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code shere. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan = new Scanner(System.in);
+        int amount = scan.nextInt();
+        scan.nextLine();
+        String notestatus = scan.nextLine();
+        int count;
+        if(notestatus.equals("available")){
+            count = 1;
+        }
+        else{
+            count = 0;
+        }
+        if (count==1){
+            if(amount %100== 0)
+                System.out.println("Amount "+ amount +" can be withdrawn");
+            
+        }
+            else{
+                if(amount %500== 0)
+                    System.out.println("Amount " +amount +" can be withdrawn");
+                
+            
+         else
+             System.out.println("Enter amount in multiples of 500");
+         
+            
+        }
+    }
+}
